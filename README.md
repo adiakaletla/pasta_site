@@ -1,2 +1,8 @@
 # pasta_site
-Investigation into Flask
+Investigation into:
+- HTML
+- CSS
+- Bootstrap
+- Python
+- Flask
+- SOLite
