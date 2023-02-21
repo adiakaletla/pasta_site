@@ -1,0 +1,138 @@
+
+:root{   
+ --brand-paper: rgb(253,251,227);
+ --brand-green: rgb(167,209,202);
+ --brand-green-pale: rgb(223,237,224);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+body{
+font-family: 'Barlow', sans-serif;
+font-size: 100%;
+background-color: var(--brand-paper);
+}
+
+/* ---- text ----*/
+.quote{
+        font-size: 2em;
+        font-style:italic;
+        padding: 1em 1em;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        color: rgb(167,209,202);
+}
+
+.body-text{
+    font-size: 2em;
+    text-align: center;
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+/* --------- */
+
+
+
+/* ---- layout ----*/
+
+.container-fluid{
+    border: 0px solid blue;
+    padding: 0;
+}
+
+.container-lg{
+    border: 0px solid pink;
+    background-color: rgb(255,255,255);
+    
+    overflow: auto;
+    margin-bottom: 1.5em;
+}
+
+.col-lg-7, .col-lg-5{
+    border: 0px solid red;
+}
+.row{
+    border: 0px solid blue;
+    padding: 1em 0 1em 0;
+}
+
+.part-img{
+    max-width: 75%;
+    margin: auto;
+    display: block;
+}
+
+/* --------- */
+
+.footer-content{
+    background-color: var(--brand-green);
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    color:white;
+}
+
+.footer-content p:first-child{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+/* ---- navigation ----*/
+
+.navbar{
+            --brand-green-pale: rgb(223,237,224);
+            background-color: var(--brand-green);
+            border-bottom: 1px solid black;
+        }
+        
+        .nav-item:hover{
+            background-color:var(--brand-green-pale);
+            color: var(--brand-green);    
+        }
+        
+        .nav-link{
+            font-size: 1.5em;
+            color:black;
+        }
+        
+        .nav-link:hover{
+        color: var(--brand-green);
+        }   
+        
+        .btn-outline{
+            border: 1px solid white;
+            padding: 0 1em;    
+        }
+        
+        .btn-outline:hover{
+        background-color:var(--brand-green-pale);
+        }
+
+/* --------- */
+@media only screen and (max-width: 768px) {
+    .body-text , .quote{
+        font-size:1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .part-img{
+        max-width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
